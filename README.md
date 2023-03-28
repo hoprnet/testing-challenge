@@ -34,14 +34,17 @@ With the running cluster it is possible to test the application. The challenge i
 * Test the message transport mechanism
   * Implement a Python wrapper around the API that will allow to call the send message for a specific node of the cluster in a pythonesque way
   * Idenitfy expected usage and edge cases for the message transport functionality
+  * Verify that the message transport over the cluster nodes works correctly
   * Implement the `pytest` tests to thouroughly verify the message transport using the cluster
+    * both sunny and rainy day scenarios
 * Take care of the code
   * Organize features reasonably
   * Use clean, minimal code
   * Make sure everything runs properly
-* Document the efforts
+* Document the challenge
   * There's no fixed test environment layout
     * document the approach you choose
+    * document any changes/deviations from the proposed setup
   * Document how to install, setup and run the test environment
   * Document the type of tests implemented and their reasoning
   * Document possible test types not supported by the current cluster setup
