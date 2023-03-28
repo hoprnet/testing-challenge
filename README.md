@@ -31,15 +31,15 @@ Note that the running image `expose`s the API ports, there is no port-mapping to
 
 ## The Challange
 With the running cluster it is possible to test the application. The challenge is open and will be evaluated based on delivering basic expectations:
-1. Test the message transport mechanism
+* Test the message transport mechanism
   * Implement a Python wrapper around the API that will allow to call the send message for a specific node of the cluster in a pythonesque way
   * Idenitfy expected usage and edge cases for the message transport functionality
   * Implement the `pytest` tests to thouroughly verify the message transport using the cluster
-2. Take care of the code
+* Take care of the code
   * Organize features reasonably
   * Use clean, minimal code
   * Make sure everything runs properly
-3. Document the efforts
+* Document the efforts
   * There's no fixed test environment layout
     * document the approach you choose
   * Document how to install, setup and run the test environment
