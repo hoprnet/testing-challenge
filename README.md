@@ -49,11 +49,11 @@ With the running cluster it is possible to test the application. The challenge i
   * There's no fixed test environment layout
     * document the approach you choose
     * document any changes/deviations from the proposed setup
+  * Document how to install, setup and run the test environment
+  * Document the type of tests implemented and their reasoning
+  * Document possible test types not supported by the current cluster setup
     
 ## Submission
 
 * store your submission on IPFS
 * send the IPFS hash with a reference to yourself to test-challenge-submissions@hoprnet.org
-  * Document how to install, setup and run the test environment
-  * Document the type of tests implemented and their reasoning
-  * Document possible test types not supported by the current cluster setup
