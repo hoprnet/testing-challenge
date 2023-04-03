@@ -5,9 +5,11 @@ Hi and welcome!
 If you have stumbled upon this repository, it must be because you love a good challenge, open source code and state-of-the-art tech.
 
 ## Intro
+
 The goal of this challenge is to test the hell out of a small mixnet composed of a small amount of HOPR nodes. Wanna know what a HOPR node does? Feel free to read more in the [light introduction](https://medium.com/hoprnet/hopr-basics-episode-1-what-is-hopr-7d8cc4daf014) at medium.com.
 
 ## Setup
+
 A mini-cluster composed of multiple HOPR nodes can be started by running the docker image `gcr.io/hoprassociation/hopr-pluto:1.92.7`. The image contains a running cluster and exports a variety of API ports for external services to latch onto individual cluster nodes ([approximate image content](https://github.com/hoprnet/hoprnet/blob/master/scripts/pluto/Dockerfile)).
 
 Run the pluto cluster:
@@ -29,10 +31,12 @@ docker logs -f pluto_cluster
 
 Note that the running image `expose`s the API ports, there is no port-mapping to the `localhost`!
 
-## The Challange
+## The Challenge
+
 With the running cluster it is possible to test the application. The challenge is open and will be evaluated based on delivering basic expectations:
+
 * Test the message transport mechanism
-  * Implement a Python wrapper around the API that will allow to call the send message for a specific node of the cluster in a pythonesque way
+  * Implement a Python wrapper around the API that will allow to call the send message endpoint for a specific node of the cluster in a pythonesque way
   * Idenitfy expected usage and edge cases for the message transport functionality
   * Verify that the message transport over the cluster nodes works correctly
   * Implement the `pytest` tests to thouroughly verify the message transport using the cluster
@@ -45,6 +49,11 @@ With the running cluster it is possible to test the application. The challenge i
   * There's no fixed test environment layout
     * document the approach you choose
     * document any changes/deviations from the proposed setup
+    
+## Submission
+
+* store your submission on IPFS
+* send the IPFS hash with a reference to yourself to test-challenge-submissions@hoprnet.org
   * Document how to install, setup and run the test environment
   * Document the type of tests implemented and their reasoning
   * Document possible test types not supported by the current cluster setup
